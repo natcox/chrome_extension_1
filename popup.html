@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="theme.js" defer></script>
+    <script src="popup.js" defer></script>
+</head>
+<body class="bg-yellow text-black p-6">
+    <h1 class="text-3xl text-center font-bold mb-4">Calculator</h1>
+    <select id="themeSelector" aria-label="Select Theme" class="mb-4 p-3 border rounded">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+        <option value="desert">Desert</option>
+        <option value="jungle">Jungle</option>
+    </select>
+    <input type="text" id="display" disabled class="w-full h-12 text-right text-2xl mb-4 border rounded p-2">
+    <div class="buttons grid grid-cols-4 gap-4 mb-4">
+        <button data-value="7" class="bg-blue-500 text-white text-2xl h-12 rounded">7</button>
+        <button data-value="8" class="bg-blue-500 text-white text-2xl h-12 rounded">8</button>
+        <button data-value="9" class="bg-blue-500 text-white text-2xl h-12 rounded">9</button>
+        <button data-value="/" class="bg-blue-500 text-white text-2xl h-12 rounded">÷</button>
+        <button data-value="4" class="bg-blue-500 text-white text-2xl h-12 rounded">4</button>
+        <button data-value="5" class="bg-blue-500 text-white text-2xl h-12 rounded">5</button>
+        <button data-value="6" class="bg-blue-500 text-white text-2xl h-12 rounded">6</button>
+        <button data-value="*" class="bg-blue-500 text-white text-2xl h-12 rounded">×</button>
+        <button data-value="1" class="bg-blue-500 text-white text-2xl h-12 rounded">1</button>
+        <button data-value="2" class="bg-blue-500 text-white text-2xl h-12 rounded">2</button>
+        <button data-value="3" class="bg-blue-500 text-white text-2xl h-12 rounded">3</button>
+        <button data-value="-" class="bg-blue-500 text-white text-2xl h-12 rounded">−</button>
+        <button data-value="0" class="bg-blue-500 text-white text-2xl h-12 rounded">0</button>
+        <button data-value="C" class="bg-red-500 text-white text-2xl h-12 rounded">C</button>
+        <button data-value="=" class="bg-green-500 text-white text-2xl h-12 rounded">=</button>
+        <button data-value="+" class="bg-blue-500 text-white text-2xl h-12 rounded">+</button>
+        <button data-value="√" class="bg-blue-300 text-white text-2xl h-12 rounded">√</button>
+        <button data-value="∛" class="bg-blue-300 text-white text-2xl h-12 rounded">∛</button>
+        <button data-value="X" class="bg-blue-300 text-white text-2xl h-12 rounded">X</button>
+        <button data-value="^" class="bg-blue-300 text-white text-2xl h-12 rounded">x^y</button>
+    </div>
+    <button id="historyButton" class="bg-gray-600 text-white w-full p-3 rounded text-xl">View History</button>
+    <ul id="historyList" aria-label="Calculation History" style="display:none;" class="bg-white rounded shadow-md p-4"></ul>
+    <button id="clearHistoryButton" class="bg-red-600 text-white w-1/2 p-3 rounded mt-2 text-xl">Clear History</button>
+</body>
+</html>

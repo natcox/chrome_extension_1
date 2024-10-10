@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Calculator Extension",
+    "version": "1.0",
+    "description": "A simple calculator with history and theme options.",
+    "permissions": ["storage"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon16-1.png"
+      }
+    },
+    "icons": {
+      "16": "icon16-1.png"
+    },
+    "background": {
+      "service_worker": "popup.js"
+    }
+  }

@@ -14,6 +14,14 @@ const themeStyles = {
     jungle: {
         background: '#4B8A3D',
         color: '#000000',
+    },
+    ocean: {
+        background: '#1E90FF', 
+        color: '#000000',        
+    },
+    mountain: {
+        background: '#8B4513',   
+        color: '#000000',        
     }
 };
 

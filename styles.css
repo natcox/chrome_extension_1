@@ -317,7 +317,7 @@ input::-moz-placeholder,
 textarea::-moz-placeholder {
     opacity: 1;
     color: #9ca3af
-}
+}g
 
 input::placeholder,
 textarea::placeholder {
